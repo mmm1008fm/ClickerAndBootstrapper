@@ -8,6 +8,7 @@ namespace Core
     public class Bootstrapper : MonoBehaviour
     {
         [SerializeField] private InputListener inputListener;
+        [SerializeField] private ClickeableItemPlus clickeableItemPlus;
         private Game _game;
         private Score _score;
 
@@ -26,6 +27,7 @@ namespace Core
             {
                 clickableItem.Construct(_score);
             }
+            clickeableItemPlus.Construct(_score);
         }
     }
 }

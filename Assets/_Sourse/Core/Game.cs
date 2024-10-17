@@ -27,7 +27,8 @@ public class Game
     {
         Debug.Log("FinishGame");
         _score.SetScore(_exitScoreValue);
-    }
+            Debug.Log($"Сейчас счет: {_exitScoreValue}");
+        }
 
 }
 }
